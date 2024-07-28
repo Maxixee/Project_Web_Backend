@@ -23,6 +23,7 @@ public class ApiExceptionHandler {
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(new ErrorMessage(request, HttpStatus.NOT_FOUND, ex.getMessage()));
     }
+    
 
     @ExceptionHandler(CharacterAlreadyExistsException.class)
     public ResponseEntity<ErrorMessage> characterAlreadyExistsException(RuntimeException ex, HttpServletRequest request) {

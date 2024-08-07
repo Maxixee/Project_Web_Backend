@@ -2,7 +2,8 @@ package br.com.backend.projetoindividual.domain.Dto;
 
 import lombok.*;
 
-@Getter @Setter
+@Getter 
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class CharacterCreateDto {
